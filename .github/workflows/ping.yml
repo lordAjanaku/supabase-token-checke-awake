@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Ping Supabase Health Function
-        run: curl https://rwdyanuhxnmbvuhupzbc.supabase.co/functions/v1/health
+        run: curl -H "Authorization: Bearer YOUR_SERVICE_ROLE_KEY" -X POST https://<project-ref>.supabase.co/functions/v1/health
