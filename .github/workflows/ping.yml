@@ -11,5 +11,6 @@ jobs:
     steps:
       - name: Ping Supabase Health Function
         run: |
-          curl -X POST https://rwdyanuhxnmbvuhupzbc.supabase.co/functions/v1/health \
-          -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ3ZHlhbnVoeG5tYnZ1aHVwemJjIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1OTcyNzM3NCwiZXhwIjoyMDc1MzAzMzc0fQ.f-YcG5hSZfScHKuxqlBNZDBneVTSqMZsPhGBL-W17xI"
+          curl -i -X POST https://rwdyanuhxnmbvuhupzbc.supabase.co/functions/v1/health \
+          -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ3ZHlhbnVoeG5tYnZ1aHVwemJjIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1OTcyNzM3NCwiZXhwIjoyMDc1MzAzMzc0fQ.f-YcG5hSZfScHKuxqlBNZDBneVTSqMZsPhGBL-W17xI" \
+          -H "apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJ3ZHlhbnVoeG5tYnZ1aHVwemJjIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1OTcyNzM3NCwiZXhwIjoyMDc1MzAzMzc0fQ.f-YcG5hSZfScHKuxqlBNZDBneVTSqMZsPhGBL-W17xI"
